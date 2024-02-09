@@ -1,4 +1,4 @@
-# Three.js Journey
+## Hit the box game with bunny
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
