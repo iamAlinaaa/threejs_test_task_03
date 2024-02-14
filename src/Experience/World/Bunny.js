@@ -61,7 +61,7 @@ export default class Bunny {
       mass: 5,
       shape: this.physicsShape,
       material: this.defaultMaterial,
-      fixedRotation:true
+      fixedRotation: true,
     });
 
     return physicsBody;
