@@ -58,7 +58,7 @@ export default class Bunny {
 
   setupPhysicsBody() {
     const physicsBody = new CANNON.Body({
-      mass: 2,
+      mass: 5,
       shape: this.physicsShape,
       material: this.defaultMaterial,
     });
