@@ -16,12 +16,12 @@ export default class Bunny {
     // Resource
     this.modelBunny = this.resources.items.bunnyModel.scene;
     this.modelBunny.rotateX(-Math.PI / 2);
-    this.modelBunny.scale.set(0.1, 0.1, 0.1);
+    this.modelBunny.scale.set(0.5, 0.5, 0.5);
 
     this.bunnyModelMeshBalls = [];
     this.bunnyPhysicsBalls = [];
     this.shootVelocity = 25;
-    this.physicsShape = new CANNON.Sphere(1);
+    this.physicsShape = new CANNON.Sphere(0.1);
     this.collisionSphereShape = this.action.collisionSphereShape;
     this.collisionSphereBody = this.action.collisionSphereBody;
   }
@@ -61,6 +61,7 @@ export default class Bunny {
       mass: 5,
       shape: this.physicsShape,
       material: this.defaultMaterial,
+      fixedRotation:true
     });
 
     return physicsBody;
