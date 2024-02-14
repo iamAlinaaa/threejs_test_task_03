@@ -35,15 +35,15 @@ export default class Environment {
     this.resources.items.environmentMap.mapping =
       THREE.EquirectangularReflectionMapping;
 
-    this.scene.environment = this.resources.items.environmentMap;
-    this.scene.background = this.resources.items.environmentMap;
+    // this.scene.environment = this.resources.items.environmentMap;
+    // this.scene.background = this.resources.items.environmentMap;
 
     this.skybox = new GroundProjectedSkybox(
       this.resources.items.environmentMap
     );
 
     this.skybox.scale.setScalar(50);
-    this.scene.add(this.skybox);
+    // this.scene.add(this.skybox);
 
     this.scene.backgroundBlurriness = 0;
     this.scene.backgroundIntensity = 1;
