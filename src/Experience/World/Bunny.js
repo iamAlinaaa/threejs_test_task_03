@@ -20,8 +20,8 @@ export default class Bunny {
 
     this.bunnyModelMeshBalls = [];
     this.bunnyPhysicsBalls = [];
-    this.shootVelocity = 15;
-    this.physicsShape = new CANNON.Sphere(1.5);
+    this.shootVelocity = 25;
+    this.physicsShape = new CANNON.Sphere(1);
     this.collisionSphereShape = this.action.collisionSphereShape;
     this.collisionSphereBody = this.action.collisionSphereBody;
   }
